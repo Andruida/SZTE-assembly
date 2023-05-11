@@ -1,0 +1,18 @@
+[  ] Starting tester.
+[  ] Phase: Compile
+  [  OK  ] File 'biro_magic.S' compiled correctly: 'biro_magic.S.o'
+[  ] Phase: Extract Symbols: 'biro_magic.S.o'
+  [  OK  ] Extracted 4 symbols.
+[  ] Phase: Assemble
+  [  OK  ] File 'feladat.s' compiled correctly: 'feladat.s.o'
+  [  OK  ] Compilable Assembly: yes
+[  ] Phase: Link
+  [  OK  ] Linked 'biro_magic.S.o, feladat.s.o' correctly: 'feladat.s.bin'
+  [  OK  ] Linked Assembly: yes
+[  ] Phase: Execution
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [ STAT ]  Tests TOTAL:    2
+  [ STAT ]  Tests PASSED:   2 (100.00%)
+  [ STAT ]  Tests FAILED:   0 (  0.00%)
+  [  OK  ] Test execution: +1 point(s) (max: 1 points)
+[  ] Total points: 1

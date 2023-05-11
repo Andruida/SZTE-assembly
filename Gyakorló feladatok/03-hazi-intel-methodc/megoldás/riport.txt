@@ -1,0 +1,27 @@
+[  ] Starting tester.
+[ DEBG ] ARGS: python3 /var/www/html/F/IB676L-1/5/1/tester.py --work-dir=/var/www/html/Hallg/IB676L-1/5/h254696/1/work --target=intel --do-cleanup --input-asm=/var/www/html/Hallg/IB676L-1/5/h254696/1/feladat.s --tester-c=/var/www/html/F/IB676L-1/5/1/tester.c  --result-file=/var/www/html/Hallg/IB676L-1/5/h254696/1/pont.txt
+[  ] Phase: Compile
+  [  OK  ] File 'tester.c' compiled correctly: 'tester.c.o'
+[  ] Phase: Extract Symbols: 'tester.c.o'
+  [  OK  ] Extracted 26 symbols.
+[  ] Phase: Assemble
+  [  OK  ] File 'feladat.s' compiled correctly: 'feladat.s.o'
+  [  OK  ] Compilable Assembly: yes
+[  ] Phase: Extract Symbols: 'feladat.s.o'
+  [  OK  ] Extracted 8 symbols.
+[  ] Phase: Check Symbols
+  [  OK  ] Using target symbol: 'filterElements'
+  [  OK  ] Symbol 'main' not found and should not be present.
+  [  OK  ] Target symbol 'filterElements' is global.
+  [  OK  ] Target symbol 'filterElements' is in text section.
+  [  OK  ] Correct Symbol in Assembly
+[  ] Phase: Link
+  [  OK  ] Linked 'tester.c.o, feladat.s.o' correctly: 'feladat.s.bin'
+  [  OK  ] Linked Assembly: yes
+[  ] Phase: Execution
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [ STAT ]  Tests TOTAL:   5
+  [ STAT ]  Tests PASSED:   5 (100.00%)
+  [ STAT ]  Tests FAILED:   0 (  0.00%)
+  [  OK  ] Test execution: +1 point(s) (max: 1 points)
+[  ] Total points: 1

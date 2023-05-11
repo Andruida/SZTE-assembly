@@ -1,0 +1,21 @@
+[  ] Starting tester.
+[  ] Phase: Assemble
+  [  OK  ] File 'feladat.s' compiled correctly: 'feladat.s.o'
+  [  OK  ] Compilable Assembly: yes
+[  ] Phase: Extract Symbols: 'feladat.s.o'
+  [  OK  ] Extracted 6 symbols.
+  [ STAT ] Symbol '.text' in '.text' section (global?: False).
+  [ STAT ] Symbol '.data' in '.data' section (global?: False).
+  [ STAT ] Symbol '.bss' in '.bss' section (global?: False).
+  [ STAT ] Symbol 'HELLO' in '.data' section (global?: False).
+  [ STAT ] Symbol 'main' in '.text' section (global?: True).
+  [ STAT ] Symbol 'printf' in '*UND*' section (global?: False).
+  [  OK  ] Target symbol 'main' is global: yes
+  [  OK  ] Target symbol 'main' is in text section: yes
+[  ] Phase: Link
+  [  OK  ] Linked 'feladat.s.o' correctly: 'feladat.s.bin'
+  [  OK  ] Linked Assembly: yes
+[  ] Phase: Execution
+  [  OK  ] Executed 'feladat.s.bin' correctly.
+  [  OK  ] Program output is correct!: yes, +1 point
+[  ] Total points: 1
